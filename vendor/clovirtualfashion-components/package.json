@@ -1,0 +1,40 @@
+{
+  "name": "@clovirtualfashion/components",
+  "version": "0.4.32-vendored",
+  "type": "module",
+  "types": "./dist/types/index.d.ts",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "sideEffects": [
+    "./dist/styles/globals.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./*": {
+      "types": "./dist/types/components/*/index.d.ts",
+      "import": "./dist/components/*/index.es.js",
+      "require": "./dist/components/*/index.cjs.js"
+    },
+    "./styles/*": {
+      "import": "./dist/styles/*",
+      "require": "./dist/styles/*"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@clovirtualfashion/foundation": "file:../clovirtualfashion-foundation",
+    "@floating-ui/react": "^0.27.6",
+    "react-scrollbars-custom": "4.1.1",
+    "react-slick": "^0.30.3",
+    "tailwind-scrollbar": "^4.0.2",
+    "tailwind-variants": "^1.0.0",
+    "uuid": "^11.1.0"
+  }
+}

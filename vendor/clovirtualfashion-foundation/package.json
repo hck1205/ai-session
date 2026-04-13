@@ -1,0 +1,18 @@
+{
+  "name": "@clovirtualfashion/foundation",
+  "version": "0.4.32-vendored",
+  "type": "module",
+  "types": "./dist/foundation.d.ts",
+  "main": "./dist/foundation.cjs.js",
+  "module": "./dist/foundation.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/foundation.d.ts",
+      "require": "./dist/foundation.cjs.js",
+      "import": "./dist/foundation.es.js"
+    },
+    "./colors.tailwind.css": {
+      "default": "./dist/colors.tailwind.css"
+    }
+  }
+}
