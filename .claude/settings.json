@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:d[k] for k in ['main','module','exports','style'] if k in d}, indent=2\\)\\)\")",
+      "Read(//Users/matt/Workspace/clo/closet/node_modules/@clovirtualfashion/**)",
+      "Bash(xargs cat:*)",
+      "Bash(node -e \"const f = require\\('/Users/matt/Workspace/clo/closet/ai-session/node_modules/@clovirtualfashion/foundation/dist/foundation.cjs.js'\\); const keys = Object.keys\\(f.colors.lightColors\\); console.log\\(keys.filter\\(k => !k.includes\\('Grayscale'\\)\\).slice\\(0,50\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const f = require\\('/Users/matt/Workspace/clo/closet/ai-session/node_modules/@clovirtualfashion/foundation/dist/foundation.cjs.js'\\); console.log\\(Object.keys\\(f\\).slice\\(0,10\\)\\)\")"
+    ]
+  }
+}
